@@ -1,5 +1,6 @@
-import { Layers, Mail, MapPin, Phone } from "lucide-react";
+import { Code, Code2, Layers, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -51,6 +52,13 @@ const Footer = () => {
                 <MapPin className="h-5 w-5" />
                 <span>11910 80 ave Delta, BC V4C 8E3, Canada</span>
               </div>
+              <Link
+                href="https://guntassandhu.com"
+                className="flex items-center space-x-3"
+              >
+                <Code className="h-5 w-5" />
+                <span>Contact developer</span>
+              </Link>
             </div>
           </div>
         </div>
