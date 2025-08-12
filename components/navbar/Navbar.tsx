@@ -41,10 +41,12 @@ const Navbar = () => {
               Contact
             </a>
           </nav>
-          <div className="flex items-center space-x-4">
-            <Phone className="h-5 w-5 text-blue-600" />
-            <span className="text-gray-900 font-medium">+1 (604) 426-862</span>
-          </div>
+          <a href="tel:+16044426862" className="flex items-center space-x-4">
+            <Phone className="size-7 md:size-5 text-blue-600" />
+            <span className="text-gray-900 font-medium hidden md:block">
+              +1 (604) 442-6862
+            </span>
+          </a>
         </div>
       </div>
     </header>

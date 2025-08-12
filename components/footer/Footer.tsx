@@ -2,6 +2,7 @@ import { Code, Code2, Layers, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { emailBody, emailSubject } from "../landing/Contact";
 
 const Footer = () => {
   return (
@@ -42,23 +43,36 @@ const Footer = () => {
             <div className="space-y-3 text-gray-400">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5" />
-                <span>+1 (604) 426-862</span>
+                <a href="tel:+16044426862">+1 (604) 442-6862</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5" />
-                <span>Info.serenetile@gmail.com</span>
+                <a
+                  href={`mailto:info.serenetile@gmail.com?subject=${encodeURIComponent(
+                    emailSubject
+                  )}&body=${encodeURIComponent(emailBody)}`}
+                >
+                  info.serenetile@gmail.com
+                </a>
               </div>
-              <div className="flex items-center space-x-3">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=11910+80+ave+Delta,+BC+V4C+8E3,+Canada"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3"
+              >
                 <MapPin className="h-5 w-5" />
                 <span>11910 80 ave Delta, BC V4C 8E3, Canada</span>
-              </div>
-              <Link
+              </a>
+              <a
                 href="https://guntassandhu.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-3"
               >
                 <Code className="h-5 w-5" />
-                <span>Contact developer</span>
-              </Link>
+                <span>Contact website developer</span>
+              </a>
             </div>
           </div>
         </div>
